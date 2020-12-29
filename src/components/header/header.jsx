@@ -5,7 +5,7 @@ import { auth } from '../../firebase/firebase.utils';
 
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 
-import './header.styles.scss';
+import './header.scss';
 
 const Header = ({ currentUser }) => (
     <div className='header'>
