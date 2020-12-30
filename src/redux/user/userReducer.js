@@ -2,11 +2,11 @@ const initialState = {
     currentUser: null
 };
 
-//action
+//action type
 
 const SET_CURRENT_USER = 'SET_CURRENT_USER';
 
-//action creater
+//action creator
 
 export const setCurrentUser = user => ({
     type: SET_CURRENT_USER,
