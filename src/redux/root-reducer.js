@@ -4,6 +4,7 @@ import storage from 'redux-persist/lib/storage';
 
 import userReducer from './user/userReducer';
 import cartReducer from './cart/cartReducer';
+import directoryReducer from './directory/directoryReducer';
 
 // key is from where do you want persist to begin.
 // whitelist is which reducers do you want to persist. we don't need to add user because
@@ -16,7 +17,8 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
     user: userReducer,
-    cart: cartReducer
+    cart: cartReducer,
+    directory: directoryReducer
 });
 
 export default persistReducer(persistConfig, rootReducer);
